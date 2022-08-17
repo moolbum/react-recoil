@@ -4,14 +4,12 @@ import { createLogger } from "redux-logger"; // 리덕스 상태 콘솔로그 �
 
 import counterSlice from "./slices/counterSlice";
 import todoSlice from "./slices/todoSlice";
-import userSlice from "./slices/userSlice";
 
 const logger = createLogger();
 
 const rootReducer = combineReducers({
   conuter: counterSlice.reducer,
   todo: todoSlice.reducer,
-  user: userSlice.reducer,
 });
 
 const initialState = {};
