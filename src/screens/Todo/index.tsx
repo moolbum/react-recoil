@@ -33,7 +33,7 @@ const Todo = () => {
     setInputTitle("");
   };
 
-  const onToggle = (id: any) => {
+  const onToggle = (id: number) => {
     const setTodoList = [...todoList];
     const toggleIndex = setTodoList.findIndex((item) => item.id === id);
     const toggleItem = { ...setTodoList[toggleIndex] };
@@ -43,7 +43,7 @@ const Todo = () => {
     dispatch(setTodo(setTodoList));
   };
 
-  const onRemove = (id: any) => {
+  const onRemove = (id: number) => {
     const setTodoList = [...todoList];
     const removeIndex = setTodoList.findIndex((item) => item.id === id);
 
