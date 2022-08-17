@@ -1,9 +1,12 @@
+import Counter from "./screens/Counter";
+// import Todo from "./screens/Todo";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Test</p>
-      </header>
+      <section>
+        <Counter />
+      </section>
     </div>
   );
 }
