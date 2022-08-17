@@ -1,4 +1,3 @@
-import React, { useState, useCallback } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/config";
 import { setCounter } from "../../store/slices/counterSlice";
 
